@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.theleakmark.gateway.services.ProductServiceImplMockTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-01T09:40:50" hostname="Giorgoss-MBP" time="0.217">
-  <properties/>
-  <testcase name="shouldReturnProduct_whenSaveProductIsCalled" classname="com.theleakmark.gateway.services.ProductServiceImplMockTest" time="0.203"/>
-  <testcase name="shouldReturnProduct_whenGetProductByIdIsCalled" classname="com.theleakmark.gateway.services.ProductServiceImplMockTest" time="0.001"/>
-  <testcase name="shouldCallDeleteMethodOfProductRepository_whenDeleteProductIsCalled" classname="com.theleakmark.gateway.services.ProductServiceImplMockTest" time="0.012"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

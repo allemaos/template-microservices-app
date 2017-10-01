@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.theleakmark.product.services.ProductServiceImplSpyTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-01T12:40:17" hostname="Giorgoss-MBP" time="0.018">
-  <properties/>
-  <testcase name="shouldVerifyThatSaveProductIsNotCalled" classname="com.theleakmark.product.services.ProductServiceImplSpyTest" time="0.0"/>
-  <testcase name="shouldThrowNullPointerException_whenGetProductByIdIsCalledWithoutContext" classname="com.theleakmark.product.services.ProductServiceImplSpyTest" time="0.016"/>
-  <testcase name="shouldVerifyThatGetProductByIdIsCalled" classname="com.theleakmark.product.services.ProductServiceImplSpyTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
