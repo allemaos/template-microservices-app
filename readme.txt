@@ -1,7 +1,3 @@
-# template-microservices-app
-
-#Notes
-
 #Book Service
 http://localhost:8090/available
 #Product Service
@@ -11,7 +7,7 @@ http://localhost:8091/v2/api-docs
 http://localhost:8091/swagger-ui.html#!/product-controller/showProductUsingGET
 http://localhost:8091/swagger-ui.html#!/book-controller/checkedOutUsingPATCH
 
-#Getway
+#Getway 
 http://localhost:8080/books/available
 http://localhost:8080/products/product/show/1
 
