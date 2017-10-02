@@ -1,4 +1,4 @@
-package com.theleakmark.product.controllers;
+package com.theleakmark.client.controllers;
 
 
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,6 +10,6 @@ import org.springframework.web.bind.annotation.RestController;
 public class IndexController {
     @RequestMapping(method= RequestMethod.GET)
     String index(){
-        return "index product or index stock";
+        return "index client";
     }
 }

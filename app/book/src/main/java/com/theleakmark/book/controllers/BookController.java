@@ -16,4 +16,9 @@ public class BookController {
     return "Spring Boot in Action";
   }
 
+  @RequestMapping(value = "/recommended")
+  public String readingList(){
+    return "Spring in Action (Manning), Cloud Native Java (O'Reilly), Learning Spring Boot (Packt)";
+  }
+
 }
