@@ -41,3 +41,4 @@ http://localhost:8989/turbine.stream?cluster=CUSTOMERS
 
 Discovery Service
 =======
+http://localhost:8761/
