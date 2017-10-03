@@ -4,4 +4,7 @@ include 'book'
 include 'client'
 include 'gateway'
 include 'product'
-
+include 'hystrix-dashboard'
+include 'turbine'
+include 'config-server'
+include 'discovery-service'

@@ -23,3 +23,11 @@ http://localhost:8070/to-read-via-getway
 http://localhost:8070/circuit-breaker/to-read
 http://localhost:8070/circuit-breaker/to-read-via-getway
 http://localhost:8070/hystrix.stream
+
+http://localhost:8061/hystrix/monitor?stream=http://localhost:8070/hystrix.stream
+
+
+turbine
+=======
+After running, use this url in the hystrix dashboard:
+http://localhost:8989/turbine.stream?cluster=CUSTOMERS

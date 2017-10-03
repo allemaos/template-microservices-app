@@ -11,7 +11,11 @@
     <modules>
         <module>book</module>
         <module>client</module>
+        <module>hystrix-dashboard</module>
         <module>gateway</module>
         <module>product</module>
+        <module>turbine</module>
+        <module>config-server</module>
+        <module>discovery-service</module>
     </modules>
 </project>

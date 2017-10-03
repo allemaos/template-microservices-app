@@ -1,6 +1,6 @@
 buildscript {
 	ext {
-		springBootVersion = '1.5.2.RELEASE'
+		springBootVersion = '1.5.7.RELEASE'
 	}
 	repositories {
 		mavenCentral()
@@ -13,29 +13,29 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
-apply plugin: 'spring-boot' 
-apply plugin: 'io.spring.dependency-management'
-
+apply plugin: 'org.springframework.boot'
 
 jar {
-	baseName = 'book'
+	baseName = 'config-server'
 	version = '0.0.1-SNAPSHOT'
 }
 
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
+
 repositories {
 	mavenCentral()
 }
 
+
 ext {
-	springCloudVersion = 'Camden.SR5'
+	springCloudVersion = 'Dalston.SR3'
 }
 
-
 dependencies {
-	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.springframework.cloud:spring-cloud-config-server')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
@@ -47,11 +47,11 @@ dependencyManagement {
 
 eclipse {
 	classpath {
-		 containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
-		 containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
+		containers.remove('org.eclipse.jdt.launching.JRE_CONTAINER')
+		containers 'org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8'
 	}
 }
 
 task wrapper(type: Wrapper) {
-	gradleVersion = '2.9'
+	gradleVersion = '3.5'
 }
