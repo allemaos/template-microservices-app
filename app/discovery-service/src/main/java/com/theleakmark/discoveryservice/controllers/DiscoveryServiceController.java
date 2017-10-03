@@ -8,16 +8,11 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URI;
 
 @RestController
-public class AvailabilityController {
+public class DiscoveryServiceController {
 
   @RequestMapping(value = "/available")
   public String available() {
-    return "Client is available";
-  }
-
-  @RequestMapping(value = "/checked-out")
-  public String checkedOut() {
-    return "Client is Checked Out";
+    return "Discovery Service is available";
   }
 
 }

@@ -8,7 +8,7 @@ import org.springframework.web.client.RestTemplate;
 import java.net.URI;
 
 @RestController
-public class AvailabilityController {
+public class ConfigServerController {
 
   @RequestMapping(value = "/available")
   public String available() {
