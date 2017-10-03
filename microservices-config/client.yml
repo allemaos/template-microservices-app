@@ -1,6 +1,6 @@
 server:
-    port: 8762
- 
+    port: 8070
+
 eureka:
     client:
         serviceUrl:
