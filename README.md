@@ -39,6 +39,13 @@ After running, use this url in the hystrix dashboard:
 http://localhost:8989/turbine.stream?cluster=CUSTOMERS
 
 
-Discovery Service
+Config Server 
 =======
-http://localhost:8761/
+According to the details from microservices-config directory from github repo https://github.com/allemaos/template-microservices-app.git 
+Discovery Service: http://localhost:8761/
+Edge-Server: http://localhost:8080/
+Hystrix Dashboard: http://localhost:8061/
+Client: http://localhost:8070/
+Book: http://localhost:8090/
+Product: http://localhost:8091/
+Turbine: http://localhost:8092/
