@@ -12,7 +12,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(webEnvironment= SpringBootTest.WebEnvironment.RANDOM_PORT, classes = ClientApplication.class)
-public class BookApplicationTests {
+public class ClientApplicationTests {
 
     @Autowired
     private TestRestTemplate rest;
@@ -20,12 +20,12 @@ public class BookApplicationTests {
     @Test
     public void availableTest() {
         String resp = rest.getForObject("/available", String.class);
-        assertThat(resp).isEqualTo("Spring in Action");
+        assertThat(resp).isEqualTo("Client is available");
     }
 
     @Test
     public void checkedOutTest() {
         String resp = rest.getForObject("/checked-out", String.class);
-        assertThat(resp).isEqualTo("Spring Boot in Action");
+        assertThat(resp).isEqualTo("Client is Checked Out");
     }
 }
