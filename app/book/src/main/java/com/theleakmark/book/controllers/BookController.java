@@ -8,12 +8,12 @@ public class BookController {
 
   @RequestMapping(value = "/available")
   public String available() {
-    return "Spring in Action";
+    return "Book is available";
   }
 
   @RequestMapping(value = "/checked-out")
   public String checkedOut() {
-    return "Spring Boot in Action";
+    return "Book is in Action";
   }
 
   @RequestMapping(value = "/recommended")

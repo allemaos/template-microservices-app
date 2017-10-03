@@ -20,12 +20,12 @@ public class BookApplicationTests {
     @Test
     public void availableTest() {
         String resp = rest.getForObject("/available", String.class);
-        assertThat(resp).isEqualTo("Spring in Action");
+        assertThat(resp).isEqualTo("Book is available");
     }
 
     @Test
     public void checkedOutTest() {
         String resp = rest.getForObject("/checked-out", String.class);
-        assertThat(resp).isEqualTo("Spring Boot in Action");
+        assertThat(resp).isEqualTo("Book is in Action");
     }
 }
