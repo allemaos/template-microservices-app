@@ -29,25 +29,23 @@ repositories {
 	mavenCentral()
 }
 
-ext {
-	springCloudVersion = 'Camden.SR5'
-}
-
 
 dependencies {
-    compile('org.springframework.cloud:spring-cloud-starter-eureka')
-	compile('org.springframework.boot:spring-boot-starter-actuator')
-    compile('org.springframework.boot:spring-boot-starter-web')
-	testCompile('org.springframework.boot:spring-boot-starter-test')
 
+compile('org.springframework.cloud:spring-cloud-starter-hystrix')
+compile('org.springframework.cloud:spring-cloud-starter-eureka')
+compile('org.springframework.boot:spring-boot-starter-actuator')
+compile('org.springframework.boot:spring-boot-starter-web')
+
+testCompile('org.springframework.boot:spring-boot-starter-test')
 }
-
 
 dependencyManagement {
 	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.SR5"
 	}
 }
+
 
 eclipse {
 	classpath {
