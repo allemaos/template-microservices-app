@@ -11,19 +11,19 @@ http://localhost:8080/recommended
 Product Service
 =======
 http://localhost:7072/stock/available
-http://127.0.0.1:7072/product/show/1
+http://localhost:7072/product/show/1
 http://localhost:7072/v2/api-docs
 http://localhost:7072/swagger-ui.html#!/product-controller/showProductUsingGET
 http://localhost:7072/swagger-ui.html#!/book-controller/checkedOutUsingPATCH
 
 Getway
 =======
-http://localhost:7070/stocks/available
+http://localhost:7070/books/recommended
+http://localhost:7070/stocks/stock/available
 http://localhost:7070/products/product/show/1
 
 CircuitBreaker - Client
 =======
-http://localhost:8070/books/recommended
 http://localhost:8070/
 http://localhost:8070/to-read-via-getway
 http://localhost:8070/circuit-breaker/to-read
