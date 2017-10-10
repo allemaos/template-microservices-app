@@ -2,6 +2,8 @@ server:
     port: 7070
 
 zuul:
+    debug:
+        request: true
     routes:
         books:
             url: http://localhost:8080

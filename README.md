@@ -30,6 +30,8 @@ http://localhost:8070/circuit-breaker/to-read
 http://localhost:8070/circuit-breaker/to-read-via-getway
 http://localhost:8070/hystrix.stream
 
+Hystrix Dashboard with Client's hystrix.stream
+=======
 http://localhost:7002/hystrix/monitor?stream=http://localhost:8070/hystrix.stream
 
 
