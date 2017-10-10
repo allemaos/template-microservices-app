@@ -16,7 +16,7 @@ public class BookService {
 
     @HystrixCommand(fallbackMethod = "reliable")
     public String readingList() {
-        URI uri = URI.create("http://localhost:8090/recommended");
+        URI uri = URI.create("http://localhost:8080/recommended");
 
         return this.restTemplate.getForObject(uri, String.class);
     }
@@ -27,7 +27,7 @@ public class BookService {
 
     @HystrixCommand(fallbackMethod = "reliableFromGateway")
     public String readingListFromGateway() {
-        URI uri = URI.create("http://localhost:8080/books/recommended");
+        URI uri = URI.create("http://localhost:7070/books/recommended");
 
         return this.restTemplate.getForObject(uri, String.class);
     }

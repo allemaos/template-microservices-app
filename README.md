@@ -5,32 +5,32 @@
 
 Book Service
 =======
-http://localhost:8090/available
+http://localhost:8080/available
+http://localhost:8080/recommended
 
 Product Service
 =======
-http://localhost:8091/book/available
-http://127.0.0.1:8091/product/show/1
-http://localhost:8091/v2/api-docs
-http://localhost:8091/swagger-ui.html#!/product-controller/showProductUsingGET
-http://localhost:8091/swagger-ui.html#!/book-controller/checkedOutUsingPATCH
+http://localhost:7072/stock/available
+http://127.0.0.1:7072/product/show/1
+http://localhost:7072/v2/api-docs
+http://localhost:7072/swagger-ui.html#!/product-controller/showProductUsingGET
+http://localhost:7072/swagger-ui.html#!/book-controller/checkedOutUsingPATCH
 
 Getway
 =======
-http://localhost:8080/books/available
-http://localhost:8080/products/product/show/1
+http://localhost:7070/stocks/available
+http://localhost:7070/products/product/show/1
 
-CircuitBreaker
+CircuitBreaker - Client
 =======
-http://localhost:8090/recommended
-http://localhost:8080/books/recommended
+http://localhost:8070/books/recommended
 http://localhost:8070/
 http://localhost:8070/to-read-via-getway
 http://localhost:8070/circuit-breaker/to-read
 http://localhost:8070/circuit-breaker/to-read-via-getway
 http://localhost:8070/hystrix.stream
 
-http://localhost:8061/hystrix/monitor?stream=http://localhost:8070/hystrix.stream
+http://localhost:7002/hystrix/monitor?stream=http://localhost:8070/hystrix.stream
 
 
 Turbine
@@ -43,9 +43,9 @@ Config Server
 =======
 According to the details from microservices-config directory from github repo https://github.com/allemaos/template-microservices-app.git 
 Discovery Service: http://localhost:8761/
-Edge-Server: http://localhost:8080/
-Hystrix Dashboard: http://localhost:8061/
+Edge-Server: http://localhost:7070/
+Hystrix Dashboard: http://localhost:7002/
 Client: http://localhost:8070/
-Book: http://localhost:8090/
-Product: http://localhost:8091/
-Turbine: http://localhost:8092/
+Book: http://localhost:8080/
+Product: http://localhost:7072/
+Turbine: http://localhost:7003/

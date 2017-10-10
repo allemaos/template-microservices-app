@@ -27,7 +27,7 @@ public class ClientController {
   @RequestMapping("/to-read")
   public String readingList() {
     RestTemplate restTemplate = new RestTemplate();
-    URI uri = URI.create("http://localhost:8090/recommended");
+    URI uri = URI.create("http://localhost:8080/recommended");
 
     return restTemplate.getForObject(uri, String.class);
   }
@@ -35,7 +35,7 @@ public class ClientController {
   @RequestMapping("/to-read-via-getway")
   public String readingListFromGetway() {
     RestTemplate restTemplate = new RestTemplate();
-    URI uri = URI.create("http://localhost:8080/books/recommended");
+    URI uri = URI.create("http://localhost:7070/books/recommended");
 
     return restTemplate.getForObject(uri, String.class);
   }
