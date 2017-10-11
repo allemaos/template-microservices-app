@@ -10,10 +10,10 @@ endpoints:
     enabled: true
 
 server:
-  port: ${PORT:8989}
+  port: ${PORT:7003}
 
 management:
-  port: 8990
+  port: 7033
 
 logging:
   level:
@@ -24,7 +24,7 @@ logging:
 eureka:
     instance:
         leaseRenewalIntervalInSeconds: 10
-        non-secure-port: ${PORT:8989}
+        non-secure-port: ${PORT:7003}
     client:
         serviceUrl:
             # defaultZone: ${vcap.services.${PREFIX:}eureka.credentials.uri:http://user:password@localhost:8761}/eureka/
