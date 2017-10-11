@@ -50,4 +50,6 @@ Hystrix Dashboard: http://localhost:7002/
 Client: http://localhost:8070/
 Book: http://localhost:8080/
 Product: http://localhost:7072/
-Turbine: http://localhost:7003/
+Turbine: http://localhost:8989/
+Turbine management: http://localhost:8990/
+
