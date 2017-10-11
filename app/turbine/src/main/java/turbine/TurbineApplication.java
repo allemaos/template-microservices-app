@@ -19,6 +19,7 @@ public class TurbineApplication {
 
 	public static void main(String[] args) {
 		boolean cloudEnvironment = new StandardEnvironment().acceptsProfiles("cloud");
-		new SpringApplicationBuilder(TurbineApplication.class).web(!cloudEnvironment).run(args);
+		//new SpringApplicationBuilder(TurbineApplication.class).web(!cloudEnvironment).run(args);
+		new SpringApplicationBuilder(TurbineApplication.class).run(args);
 	}
 }

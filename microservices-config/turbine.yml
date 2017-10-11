@@ -11,6 +11,9 @@ endpoints:
 
 server:
   port: ${PORT:7003}
+turbine:
+  amqp:
+    port: 8989
 
 management:
   port: 7033
