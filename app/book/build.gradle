@@ -1,3 +1,7 @@
+ext {
+	springCloudVersion = 'Camden.SR5'
+}
+
 buildscript {
 	ext {
 		springBootVersion = '1.5.2.RELEASE'
@@ -31,18 +35,17 @@ repositories {
 
 
 dependencies {
+	compile('org.springframework.cloud:spring-cloud-starter-config')
+	compile('org.springframework.cloud:spring-cloud-starter-eureka')
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	compile('org.springframework.boot:spring-boot-starter-web')
 
-compile('org.springframework.cloud:spring-cloud-starter-hystrix')
-compile('org.springframework.cloud:spring-cloud-starter-eureka')
-compile('org.springframework.boot:spring-boot-starter-actuator')
-compile('org.springframework.boot:spring-boot-starter-web')
-
-testCompile('org.springframework.boot:spring-boot-starter-test')
+	testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
 dependencyManagement {
 	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:Camden.SR5"
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
 	}
 }
 
