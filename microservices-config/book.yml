@@ -1,5 +1,23 @@
+info:
+  component: Book
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
 server:
     port: 7073
+
+management:
+  port: 8073
+
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
+    # org.springframework.integration: DEBUG
 
 eureka:
     client:

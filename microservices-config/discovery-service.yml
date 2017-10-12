@@ -1,5 +1,23 @@
+info:
+  component: Discovery Service
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
 server:
     port: 8761
+
+management:
+  port: 9761
+
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
+    # org.springframework.integration: DEBUG
 
 # Defines the Eureka server that is used by the Netflix OSS components to use as the registry
 # for server discovery

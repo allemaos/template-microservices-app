@@ -1,5 +1,23 @@
+info:
+  component: Gateway
+
+endpoints:
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+
 server:
-    port: 7070
+    port: 7170
+
+management:
+  port: 8170
+
+logging:
+  level:
+    root: INFO
+    com.netflix.discovery: 'OFF'
+    # org.springframework.integration: DEBUG
 
 zuul:
     debug:
