@@ -10,9 +10,6 @@ endpoints:
 server:
     port: 8761
 
-management:
-  port: 9761
-
 logging:
   level:
     root: INFO
