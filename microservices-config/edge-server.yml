@@ -27,7 +27,7 @@ zuul:
             path: /books/**
             serviceId: books
             stripPrefix: true
-            url: http://localhost:8080
+            url: http://localhost:7073
         products:
             url: http://localhost:7072
         stocks:

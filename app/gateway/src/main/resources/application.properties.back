@@ -1,6 +1,6 @@
-zuul.routes.books.url=http://localhost:8090
-zuul.routes.products.url=http://localhost:8091
+zuul.routes.books.url=http://localhost:7073
+zuul.routes.products.url=http://localhost:7072
 
 ribbon.eureka.enabled=false
 
-server.port=8080
+server.port=7170

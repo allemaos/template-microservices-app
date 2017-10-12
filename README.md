@@ -5,8 +5,8 @@
 
 Book Service
 =======
-http://localhost:8080/available
-http://localhost:8080/recommended
+http://localhost:7073/available
+http://localhost:7073/recommended
 
 Product Service
 =======
@@ -48,7 +48,7 @@ Discovery Service: http://localhost:8761/
 Edge-Server: http://localhost:7170/
 Hystrix Dashboard: http://localhost:7002/
 Client: http://localhost:7070/
-Book: http://localhost:8080/
+Book: http://localhost:7073/
 Product: http://localhost:7072/
 Turbine: http://localhost:8989/
 Turbine management: http://localhost:8990/

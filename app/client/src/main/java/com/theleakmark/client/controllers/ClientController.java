@@ -27,7 +27,7 @@ public class ClientController {
   @RequestMapping("/to-read")
   public String readingList() {
     RestTemplate restTemplate = new RestTemplate();
-    URI uri = URI.create("http://localhost:8080/recommended");
+    URI uri = URI.create("http://localhost:7073/recommended");
 
     return restTemplate.getForObject(uri, String.class);
   }
