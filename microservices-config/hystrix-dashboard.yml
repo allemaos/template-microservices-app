@@ -1,17 +1,13 @@
 info:
   component: Hystrix Dashboad
 
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 server:
     port: 7002
 
 management:
   port: 8002
+  security:
+    enabled: false
 
 logging:
   level:

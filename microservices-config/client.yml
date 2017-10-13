@@ -5,8 +5,7 @@ server:
   port: ${PORT:7070}
 
 management:
-  port: ${XD_MGMT_PORT:${PORT:7070}}
-  contextPath: /management
+  port: 8070
   security:
     enabled: false
 

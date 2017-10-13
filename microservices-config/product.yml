@@ -1,17 +1,13 @@
 info:
   component: Product
 
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 server:
     port: 7072
 
 management:
   port: 8072
+  security:
+    enabled: false
 
 logging:
   level:

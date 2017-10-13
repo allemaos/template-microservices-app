@@ -1,10 +1,10 @@
 ext {
-    springCloudVersion = 'Camden.SR5'
+    springCloudVersion = 'Dalston.SR3'
 }
 
 buildscript {
     ext {
-        springBootVersion = '1.5.2.RELEASE'
+        springBootVersion = '1.5.7.RELEASE'
     }
     repositories {
         mavenCentral()

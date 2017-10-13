@@ -29,7 +29,7 @@ http://localhost:7070/to-read
 http://localhost:7070/to-read-via-getway
 http://localhost:7070/circuit-breaker/to-read
 http://localhost:7070/circuit-breaker/to-read-via-getway
-http://localhost:7070/hystrix.stream
+http://localhost:8070/hystrix.stream
 
 Hystrix Dashboard with Client's hystrix.stream
 =======

@@ -1,12 +1,6 @@
 info:
   component: Discovery Service
 
-endpoints:
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 server:
     port: 8761
 
