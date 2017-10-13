@@ -25,6 +25,7 @@ http://localhost:7170/products/product/show/1
 CircuitBreaker - Client
 =======
 http://localhost:7070/
+http://localhost:7070/to-read
 http://localhost:7070/to-read-via-getway
 http://localhost:7070/circuit-breaker/to-read
 http://localhost:7070/circuit-breaker/to-read-via-getway

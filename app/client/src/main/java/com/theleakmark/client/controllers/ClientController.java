@@ -28,15 +28,13 @@ public class ClientController {
   public String readingList() {
     RestTemplate restTemplate = new RestTemplate();
     URI uri = URI.create("http://localhost:7073/recommended");
-
     return restTemplate.getForObject(uri, String.class);
   }
 
   @RequestMapping("/to-read-via-getway")
   public String readingListFromGetway() {
     RestTemplate restTemplate = new RestTemplate();
-    URI uri = URI.create("http://localhost:7070/books/recommended");
-
+    URI uri = URI.create("http://localhost:7170/books/recommended");
     return restTemplate.getForObject(uri, String.class);
   }
 
