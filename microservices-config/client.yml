@@ -1,14 +1,6 @@
 info:
   component: Client
 
-endpoints:
-  hystrix.stream:
-    enabled: true
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-
 server:
   port: ${PORT:7070}
 
