@@ -21,7 +21,7 @@ logging:
   level:
     root: INFO
     com.netflix.discovery: 'OFF'
-    # org.springframework.integration: DEBUG
+    org.springframework.integration: DEBUG
 
 eureka:
     client:
