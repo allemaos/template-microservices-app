@@ -10,10 +10,13 @@ endpoints:
     enabled: true
 
 server:
-  port: 7070
+  port: ${PORT:7070}
 
 management:
-  port: 8070
+  port: ${XD_MGMT_PORT:${PORT:7070}}
+  contextPath: /management
+  security:
+    enabled: false
 
 logging:
   level:
