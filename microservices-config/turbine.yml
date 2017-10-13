@@ -1,8 +1,8 @@
 info:
   component: Turbine
-
-server:
-  port: 7003
+#
+#server:
+#  port: 7003
 
 management:
   port: 8003
