@@ -7,7 +7,7 @@ management:
     enabled: false
 
 turbine:
-  amqp:
+  stream:
     port: 8989
 
 spring:
