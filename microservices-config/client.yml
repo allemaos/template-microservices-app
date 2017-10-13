@@ -2,13 +2,15 @@ info:
   component: Client
 
 endpoints:
+  hystrix.stream:
+    enabled: true
   restart:
     enabled: true
   shutdown:
     enabled: true
 
 server:
-    port: 7070
+  port: 7070
 
 management:
   port: 8070
